@@ -8,7 +8,7 @@ const Stopwatch = () => {
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
-    let intervalId;
+    let intervalId: NodeJS.Timeout;
     if (isRunning) {
       // setting time from 0 to 1 every 10 milisecond using javascript setInterval method
       intervalId = setInterval(() => setTime(time + 1), 10);
