@@ -4,8 +4,8 @@ import { AttributesProps } from "./Attributes.types";
 const Attributes = () => {
   return (
     <div className={styles.container}>
-      <div>2x 20segundos</div>
-      <div>10kg</div>
+      <div className={styles.item}>2x 20segundos</div>
+      <div className={styles.item}>10kg</div>
     </div>
   );
 };
