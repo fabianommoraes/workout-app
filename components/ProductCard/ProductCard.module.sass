@@ -1,0 +1,73 @@
+@use "tokens"
+
+.productCard 
+  background-color: tokens.$white-color
+  padding: tokens.$space-zero
+  outline: none
+  border: 1.5px solid transparent
+
+  &:focus
+    border: 1.5px solid tokens.$secondary-color
+
+  .productInfo 
+    display: flex
+    flex-direction: row
+
+    > img 
+      margin-right: tokens.$space-medium
+      border-radius: 4px
+      width: 100%
+      height: auto
+      max-width: 180px
+      max-height: 180px
+    
+.description 
+  display: flex
+  flex-direction: column
+  font-size: tokens.$font-size-small
+
+.price 
+  display: flex
+  align-items: center
+  margin-top: tokens.$space-medium
+  margin-bottom: tokens.$space-xlarge
+  font-size: tokens.$font-size-medium
+  white-space: nowrap
+
+  > img 
+    margin: tokens.$space-zero tokens.$space-medium
+    cursor: pointer
+  
+.decimals
+  font-size: tokens.$font-size-xsmall
+  align-self: flex-start
+  margin-top: 2px
+
+.location 
+  font-size: tokens.$font-size-xsmall
+  color: tokens.$grayscale-medium
+  text-align: right
+  margin-top: tokens.$space-large
+  margin-right: tokens.$space-small
+
+.title
+  font-size: tokens.$font-size-small
+  font-weight: 400
+
+@media (min-width: tokens.$layout-breakpoint-medium)
+  .productCard
+    display: grid
+    grid-template-columns: 8fr 2fr
+    gap: tokens.$space-large
+    padding: tokens.$space-medium tokens.$space-small
+
+  .location
+    margin-top: tokens.$space-xlarge
+    text-align: left
+
+  .price
+    font-size: tokens.$font-size-large
+
+  .title
+    font-size: tokens.$font-size-medium
+    font-weight: 400
