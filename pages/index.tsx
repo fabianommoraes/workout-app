@@ -1,17 +1,20 @@
+import Attributes from "@/components/Attributes/Attributes";
+import Gif from "@/components/Gif/Gif";
+import Title from "@/components/Title/Title";
 import Head from "next/head";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Mercado Libre</title>
-        <meta
-          name="description"
-          content="Comprá productos con Envío Gratis en el día en Mercado Libre Argentina. Encontrá miles de marcas y productos a precios increíbles."
-        />
+        <title>Workout App</title>
+        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Title>Sequência fortalecimento de tornozelo</Title>
+      <Gif />
+      <Attributes />
     </>
   );
 }
