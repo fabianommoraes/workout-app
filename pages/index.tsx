@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   const nextExercise = () => {
-    if (currentExercise !== train.train.length) {
+    if (currentExercise !== train.train[currentTrain].length - 1) {
       const newExercise = currentExercise + 1;
       setCurrentExercise(newExercise);
     }
@@ -34,7 +34,7 @@ export default function Home() {
   // };
 
   const nextTrain = () => {
-    if (currentTrain === train.train.length) {
+    if (currentTrain === train.train.length - 1) {
       const newTrain = 0;
       setCurrentTrain(newTrain);
     } else {
@@ -49,7 +49,6 @@ export default function Home() {
         <title>Workout App</title>
       </Head>
       <Train number={currentTrain} onClick={nextTrain} />
-      {currentTrain}
       <Exercise name={train.train[currentTrain][currentExercise].name} />
       <Gif src={`/${currentTrain}/${currentExercise}.gif`} />
       <Attributes

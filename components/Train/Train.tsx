@@ -9,8 +9,8 @@ const fromTo = ["A", "B", "C"];
 
 const Train = ({ number, onClick }: TrainProps) => {
   return (
-    <div onClick={onClick} className={styles.title}>
-      Treino {fromTo[number]}
+    <div onClick={onClick} className={styles.train}>
+      Treino <span>{fromTo[number]}</span>
     </div>
   );
 };
