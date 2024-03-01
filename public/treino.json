@@ -11,6 +11,18 @@
         "description": "2x 30s",
         "weight": "5kg"
       }
+    ],
+    [
+      {
+        "name": "Sequência fortalecimento mão e punho",
+        "description": "2x 20s",
+        "weight": "Elástico leve"
+      },
+      {
+        "name": "Rosca, soco e desenvolvimento",
+        "description": "2x 30s",
+        "weight": "6kg"
+      }
     ]
   ]
 }

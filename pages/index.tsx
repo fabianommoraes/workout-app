@@ -6,10 +6,18 @@ import Head from "next/head";
 import { useState } from "react";
 import train from "@/public/treino.json";
 import Touch from "@/components/Touch/Touch";
+import Train from "@/components/Train/Train";
 
 export default function Home() {
   const [currentTrain, setCurrentTrain] = useState(0);
   const [currentExercise, setCurrentExercise] = useState(0);
+
+  const previousExercise = () => {
+    if (currentExercise !== 0) {
+      const newExercise = currentExercise - 1;
+      setCurrentExercise(newExercise);
+    }
+  };
 
   const nextExercise = () => {
     if (currentExercise !== train.train.length) {
@@ -18,10 +26,20 @@ export default function Home() {
     }
   };
 
-  const previusExercise = () => {
-    if (currentExercise !== 0) {
-      const newExercise = currentExercise - 1;
-      setCurrentExercise(newExercise);
+  // const previousTrain = () => {
+  //   if (currentTrain !== train.train.length) {
+  //     const newTrain = currentTrain - 1;
+  //     setCurrentTrain(newTrain);
+  //   }
+  // };
+
+  const nextTrain = () => {
+    if (currentTrain === train.train.length) {
+      const newTrain = 0;
+      setCurrentTrain(newTrain);
+    } else {
+      const newTrain = currentTrain + 1;
+      setCurrentTrain(newTrain);
     }
   };
 
@@ -30,6 +48,8 @@ export default function Home() {
       <Head>
         <title>Workout App</title>
       </Head>
+      <Train number={currentTrain} onClick={nextTrain} />
+      {currentTrain}
       <Exercise name={train.train[currentTrain][currentExercise].name} />
       <Gif src={`/${currentTrain}/${currentExercise}.gif`} />
       <Attributes
@@ -38,7 +58,7 @@ export default function Home() {
       />
       <Stopwatch />
 
-      <Touch left onClick={previusExercise} />
+      <Touch left onClick={previousExercise} />
       <Touch right onClick={nextExercise} />
     </>
   );
