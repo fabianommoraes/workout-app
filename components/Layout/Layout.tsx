@@ -1,4 +1,5 @@
 import { Roboto } from "next/font/google";
+import styles from './Layout.module.sass'
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -12,7 +13,7 @@ const roboto = Roboto({
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <main className={roboto.className}>{children}</main>
+      <main className={`${roboto.className} ${styles.layout}`}>{children}</main>
     </>
   );
 };

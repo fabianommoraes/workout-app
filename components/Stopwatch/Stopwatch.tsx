@@ -41,7 +41,8 @@ const Stopwatch = () => {
   return (
     <div className={styles.container}>
       <p className={styles.timer}>
-        {hours}:{minutes.toString().padStart(2, "0")}:
+        {/* {hours}: */}
+        {minutes.toString().padStart(2, "0")}:
         {seconds.toString().padStart(2, "0")}:
         {milliseconds.toString().padStart(2, "0")}
       </p>
