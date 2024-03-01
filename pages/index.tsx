@@ -26,25 +26,7 @@ export default function Home() {
     }
   };
 
-  // const previousTrain = () => {
-  //   if (currentTrain !== train.train.length) {
-  //     const newTrain = currentTrain - 1;
-  //     setCurrentTrain(newTrain);
-  //   }
-  // };
-
   const nextTrain = () => {
-    // noSleepy();
-
-    // document.addEventListener(
-    //   "click",
-    //   function enableNoSleep() {
-    //     document.removeEventListener("click", enableNoSleep, false);
-    //     noSleep.enable();
-    //   },
-    //   false
-    // );
-
     if (currentTrain === train.train.length - 1) {
       const newTrain = 0;
       setCurrentTrain(newTrain);
