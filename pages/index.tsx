@@ -14,6 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="manifest" href="manifest.json" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </Head>
       <Title>Sequência fortalecimento de tornozelo</Title>
       <Gif />
