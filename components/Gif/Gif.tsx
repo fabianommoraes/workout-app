@@ -1,11 +1,15 @@
 import Image from "next/image";
 import styles from "./Gif.module.sass";
 
-const Gif = () => {
+type GifProps = {
+  src: string;
+};
+
+const Gif = ({ src }: GifProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.gif}>
-        <Image src="/0/0.gif" fill alt="" />;
+        <Image priority src={src} fill alt="" />;
       </div>
     </div>
   );

@@ -1,0 +1,16 @@
+{
+  "train": [
+    [
+      {
+        "name": "Sequência fortalecimento de tornozelo",
+        "description": "2x 20s",
+        "weight": "10kg"
+      },
+      {
+        "name": "Reloginho com supino, 1:2",
+        "description": "2x 30s",
+        "weight": "5kg"
+      }
+    ]
+  ]
+}

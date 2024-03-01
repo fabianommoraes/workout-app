@@ -1,11 +1,15 @@
 import styles from "./Attributes.module.sass";
-import { AttributesProps } from "./Attributes.types";
 
-const Attributes = () => {
+type AttributesProps = {
+  description: string;
+  weight: string;
+};
+
+const Attributes = ({ description, weight }: AttributesProps) => {
   return (
     <div className={styles.container}>
-      <div className={styles.item}>2x 20segundos</div>
-      <div className={styles.item}>10kg</div>
+      <div className={styles.item}>{description}</div>
+      <div className={styles.item}>{weight}</div>
     </div>
   );
 };
