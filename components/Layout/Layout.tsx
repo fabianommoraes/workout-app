@@ -1,5 +1,8 @@
-import { LayoutProps } from "./Layout.types";
 import { Roboto } from "next/font/google";
+
+type LayoutProps = {
+  children: React.ReactNode;
+};
 
 const roboto = Roboto({
   weight: "400",
