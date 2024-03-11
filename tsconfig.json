@@ -26,7 +26,8 @@
     "shared/withRedux.js",
     "shared/test-utils.jsx",
     "components/ListOfMonsters/RadioGroup.js",
-    "cypress/e2e/melia11y.cy.js"
+    "cypress/e2e/melia11y.cy.js",
+    "pages/montar-treino/index.jsx"
   ],
   "exclude": [
     "node_modules",
