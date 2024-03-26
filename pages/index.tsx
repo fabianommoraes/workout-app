@@ -3,7 +3,7 @@ import Gif from "@/components/Gif/Gif";
 import Stopwatch from "@/components/Stopwatch/Stopwatch";
 import Exercise from "@/components/Exercise/Exercise";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import train from "@/public/treino.json";
 import Touch from "@/components/Touch/Touch";
 import Train from "@/components/Train/Train";

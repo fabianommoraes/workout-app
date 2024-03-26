@@ -1,25 +1,40 @@
 import Select from "@/components/Select/Select";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const train = [[], [], []];
 
 export default function MontarTreino() {
   const [selectedTrain, setSelectedTrain] = useState(0);
-  const [selectedExercise, setSelectedExercise] = useState("null");
+
+  const [selectedName, setSelectedName] = useState("null");
+  const [selectedId, setSelectedId] = useState("null");
   const [selectedLoad, setSelectedLoad] = useState("null");
   const [selectedSeries, setSelectedSeries] = useState("null");
   const [selectedRepetitions, setSelectedRepetitions] = useState("null");
   const [showTrain, setShowTrain] = useState(false);
 
+  const [exercises, setExercises] = useState([]);
+
+  const fetchExercises = async () => {
+    const response = await fetch("/api/exercises");
+    const data = await response.json();
+    setExercises(data);
+  };
+
+  useEffect(() => {
+    fetchExercises();
+  }, []);
+
   const nextExercise = () => {
     train[selectedTrain].push({
-      exercise: selectedExercise,
+      name: selectedName,
+      id: selectedId,
       load: selectedLoad,
       series: selectedSeries,
       repetitions: selectedRepetitions
     });
 
-    setSelectedExercise("null");
+    setSelectedId("null");
     setSelectedLoad("null");
     setSelectedSeries("null");
     setSelectedRepetitions("null");
@@ -60,15 +75,22 @@ export default function MontarTreino() {
           <label>
             Selecione o exercício:
             <select
-              value={selectedExercise}
-              onChange={(e) => setSelectedExercise(e.target.value)}
+              value={selectedId}
+              onChange={(e) => {
+                setSelectedName(e.target.selectedOptions[0].text);
+                setSelectedId(e.target.value);
+              }}
             >
               <option value="null">-</option>
-              <option value="Supino reto">Supino reto</option>
-              <option value="Canoinha isométrica">Canoinha isométrica</option>
-              <option value="Desenvolvimento Lateral">
-                Desenvolvimento Lateral
-              </option>
+              {exercises.map((exercise) => (
+                <option
+                  key={exercise._id}
+                  value={exercise._id}
+                  name={exercise.name}
+                >
+                  {exercise.name}
+                </option>
+              ))}
             </select>
           </label>
 
@@ -123,8 +145,8 @@ export default function MontarTreino() {
       {showTrain && (
         <div>
           {train[0].map((exercise) => (
-            <div key={exercise.exercise}>
-              {exercise.exercise} | Carga: {exercise.load} | Séries:{" "}
+            <div key={exercise.id}>
+              {exercise.name} | Carga: {exercise.load} | Séries:{" "}
               {exercise.series} | Repetições: {exercise.repetitions}
             </div>
           ))}
