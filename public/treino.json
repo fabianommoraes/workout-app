@@ -34,7 +34,7 @@
       {
         "name": "Cadeirinha rosca",
         "description": "3x 30s",
-        "weight": "10kg"
+        "weight": "-"
       },
       {
         "name": "Abd morte",
@@ -44,70 +44,70 @@
     ],
     [
       {
-        "name": "Sequência fortalecimento mão e punho",
-        "description": "2x 20s",
-        "weight": "Elástico leve"
-      },
-      {
-        "name": "Rosca, soco e desenvolvimento",
-        "description": "2x 30s",
-        "weight": "6kg"
-      },
-      {
-        "name": "Remada na máquina",
-        "description": "?",
-        "weight": "4x 8"
-      },
-      {
-        "name": "Elevação no plano da escápula",
-        "description": "10kg",
-        "weight": "3x 12 a 15"
-      },
-      {
-        "name": "Rosca direta drop set",
-        "description": "14 e 10kg",
-        "weight": "3x 6 e 10"
-      },
-      {
-        "name": "Nadador",
-        "description": "?",
-        "weight": "3x 12"
-      },
-      {
-        "name": "Superman isométrico",
-        "description": "-",
-        "weight": "3x 30s"
-      },
-      {
-        "name": "Prancha lateral trocando",
-        "description": "-",
-        "weight": "3x 30s"
-      }
-    ],
-    [
-      {
-        "name": "Sequência fortalecimento de tornozelo",
-        "description": "2x 20s",
+        "name": "Pullover unilat",
+        "description": "2x 12",
         "weight": "-"
       },
       {
-        "name": "Agachamento profundo",
+        "name": "Abd alternado",
         "description": "2x 15",
         "weight": "-"
       },
       {
-        "name": "Agachamento com salto lateral",
-        "description": "3x 10 a 15",
+        "name": "Puxada unilat exce",
+        "description": "4x 8-10",
         "weight": "-"
       },
       {
-        "name": "Cadeira adutora",
-        "description": "3x 20",
+        "name": "Supino 1:3",
+        "description": "4x 6-8",
+        "weight": "-"
+      },
+      {
+        "name": "Agach+Salto 5:5",
+        "description": "3x 10",
+        "weight": "-"
+      },
+      {
+        "name": "Desenv sentado",
+        "description": "3x 12",
+        "weight": "-"
+      },
+      {
+        "name": "Prancha elástico",
+        "description": "3x 12 cada",
+        "weight": "-"
+      },
+      {
+        "name": "Abd flexão espaldar",
+        "description": "3x 8-15",
+        "weight": "-"
+      }
+    ],
+    [
+      {
+        "name": "Skipping pausa",
+        "description": "2x 20 pausas",
+        "weight": "-"
+      },
+      {
+        "name": "Rosca, soco, desenv",
+        "description": "2x 10",
+        "weight": "-"
+      },
+      {
+        "name": "Agachamento com salto",
+        "description": "4x 15 a 20",
+        "weight": "-"
+      },
+      {
+        "name": "Crucifixo",
+        "description": "4x 12",
         "weight": "?"
       },
       {
-        "name": "Cadeira abdutora",
-        "description": "3x 15",
+        "name": "Flexão curtinha",
+        "description": "3x 15-20",
         "weight": "?"
       },
       {
@@ -116,17 +116,12 @@
         "weight": "30kg"
       },
       {
-        "name": "Saltitos de pantu + infinita",
-        "description": "3x 20s cada",
+        "name": "Barra com perna",
+        "description": "3x 10",
         "weight": "-"
       },
       {
-        "name": "Prancha lateral com abdução",
-        "description": "3x 10 cada",
-        "weight": "-"
-      },
-      {
-        "name": "Prancha alta flex joelho",
+        "name": "Superman espaldar",
         "description": "3x 15",
         "weight": "-"
       }
