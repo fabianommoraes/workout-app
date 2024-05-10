@@ -2,43 +2,43 @@
   "train": [
     [
       {
-        "name": "Sequência fortalecimento de tornozelo",
-        "description": "2x 20s",
+        "name": "Rotação interna",
+        "description": "2x 15 cada",
         "weight": "-"
       },
       {
-        "name": "Reloginho com supino, 1:2",
-        "description": "2x 30s",
-        "weight": "5kg"
-      },
-      {
-        "name": "Supino reto",
-        "description": "4x 8",
-        "weight": "30kg"
-      },
-      {
-        "name": "Canoinha isométrica",
-        "description": "4x 45s",
+        "name": "Agach c/ desenv",
+        "description": "2x 15",
         "weight": "-"
       },
       {
-        "name": "Desenvolvimento lateral",
-        "description": "3x 10 a 12",
-        "weight": "14kg"
+        "name": "Afundo equilíbrio",
+        "description": "3x 10-15 cada",
+        "weight": "-"
       },
       {
-        "name": "Tríceps pulley",
-        "description": "3x 15",
+        "name": "Flexão braço+ombro",
+        "description": "3x 14-20, 2:2",
+        "weight": "-"
+      },
+      {
+        "name": "Tríceps testa na polia",
+        "description": "3x 10-15",
         "weight": "-"
       },
       {
         "name": "Crucifixo rápido",
-        "description": "3x 20",
+        "description": "3x 25",
+        "weight": "-"
+      },
+      {
+        "name": "Cadeirinha rosca",
+        "description": "3x 30s",
         "weight": "10kg"
       },
       {
-        "name": "Abd canivete",
-        "description": "3x 15",
+        "name": "Abd morte",
+        "description": "3x 30s",
         "weight": "-"
       }
     ],
