@@ -44,85 +44,85 @@
     ],
     [
       {
-        "name": "Pullover unilat",
-        "description": "2x 12",
+        "name": "Seq tornozelo",
+        "description": "2x 20s cada",
         "weight": "-"
       },
       {
-        "name": "Abd alternado",
-        "description": "2x 15",
+        "name": "Prancha alta ombro",
+        "description": "2x 10 cada",
         "weight": "-"
       },
       {
-        "name": "Puxada unilat exce",
-        "description": "4x 8-10",
+        "name": "Flexão declinada",
+        "description": "4x 10",
         "weight": "-"
       },
       {
-        "name": "Supino 1:3",
-        "description": "4x 6-8",
+        "name": "Agachamento sumô",
+        "description": "4x 8-12",
         "weight": "-"
       },
       {
-        "name": "Agach+Salto 5:5",
-        "description": "3x 10",
+        "name": "Tríceps ponta pé",
+        "description": "3x 15",
         "weight": "-"
       },
       {
-        "name": "Desenv sentado",
-        "description": "3x 12",
+        "name": "Barra fixa com perna",
+        "description": "3x 8-10",
         "weight": "-"
       },
       {
-        "name": "Prancha elástico",
-        "description": "3x 12 cada",
+        "name": "Abd exc com remada",
+        "description": "3x 10-15",
         "weight": "-"
       },
       {
-        "name": "Abd flexão espaldar",
-        "description": "3x 8-15",
+        "name": "Abd lado espaldar",
+        "description": "3x 10 cada",
         "weight": "-"
       }
     ],
     [
       {
-        "name": "Skipping pausa",
-        "description": "2x 20 pausas",
+        "name": "Afunda equilíbrio",
+        "description": "2x 10 cada",
         "weight": "-"
       },
       {
-        "name": "Rosca, soco, desenv",
-        "description": "2x 10",
+        "name": "Supino em pé",
+        "description": "2x 15",
         "weight": "-"
       },
       {
-        "name": "Agachamento com salto",
-        "description": "4x 15 a 20",
-        "weight": "-"
-      },
-      {
-        "name": "Crucifixo",
-        "description": "4x 12",
-        "weight": "?"
-      },
-      {
-        "name": "Flexão curtinha",
-        "description": "3x 15-20",
-        "weight": "?"
-      },
-      {
-        "name": "Stiff",
-        "description": "3x 6 a 8",
-        "weight": "30kg"
-      },
-      {
-        "name": "Barra com perna",
+        "name": "Cadeira abd exc",
         "description": "3x 10",
         "weight": "-"
       },
       {
-        "name": "Superman espaldar",
-        "description": "3x 15",
+        "name": "Supino Inclinado",
+        "description": "3x 10",
+        "weight": "-"
+      },
+      {
+        "name": "Cadeira flexora",
+        "description": "3x 10-15",
+        "weight": "-"
+      },
+      {
+        "name": "Saltitos pantu 10:10",
+        "description": "40s-60s",
+        "weight": "-"
+      },
+      {
+        "name": "Abd joelhos",
+        "description": "3x 30s",
+        "weight": "-"
+      },
+      {
+        "name": "Superman iso",
+        "description": "3x 30s",
         "weight": "-"
       }
     ]
